@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    // color
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+
+header {
+    background-color: var(--violet);
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    color: white;
+    nav {
+        width: 10rem;
+    }
+    .img {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .home-txt {
+        h1 {
+            font-family: 'Poppins';
+        }
+        p {
+            font-family: 'Open sans';
+            margin-bottom: 1.5rem;
+            letter-spacing: 3px;
+            line-height: 1.5rem;
+        }
+    }
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+    .fb {
+        padding: 1rem 1.2rem;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+    }
+    .icon {
+        padding: 1rem;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        margin: 0 0.5rem;
+    }
+    button {
+        width: 15rem;
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #ffffff;
+        color: var(--violet);
+        border-radius: 5rem;
+        margin-bottom: 5rem;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-width: 793px){
+    header {
+        padding: 2.5rem;
+        background-image: url(/images/bg-desktop.svg);
+    }
+    img {
+        margin: 0;
+    }
+    .home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+
+        .home-txt {
+            display: grid;
+            align-content: center;
+            justify-content: center;
+            margin-left: 2rem;
+            text-align: left;
+        }
+        h1 {
+            letter-spacing: 0.5rem;
+        }
+        .social {
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

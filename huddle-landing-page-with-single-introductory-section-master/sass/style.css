@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-color: var(--violet);
+  background-image: url("/images/bg-mobile.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  color: white;
+}
+
+header nav {
+  width: 10rem;
+}
+
+header .img {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+header .home-txt h1 {
+  font-family: 'Poppins';
+}
+
+header .home-txt p {
+  font-family: 'Open sans';
+  margin-bottom: 1.5rem;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+}
+
+header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .fb {
+  padding: 1rem 1.2rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+header .icon {
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+
+header button {
+  width: 15rem;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #ffffff;
+  color: var(--violet);
+  border-radius: 5rem;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 793px) {
+  header {
+    padding: 2.5rem;
+    background-image: url(/images/bg-desktop.svg);
+  }
+  img {
+    margin: 0;
+  }
+  .home {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  .home .home-txt {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 2rem;
+    text-align: left;
+  }
+  .home h1 {
+    letter-spacing: 0.5rem;
+  }
+  .home .social {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
